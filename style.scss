@@ -89,7 +89,15 @@ li {
     padding: 10px;
 }
 
-@media all and (max-width: 1010px) {
+@media all and (max-width: 1050px) {
+
+
+
+li {
+    line-height: 1rem;
+    font-size: rem;
+}
+
     .middleText{
         display: none;
     }
@@ -99,10 +107,10 @@ li {
         margin: 25px 0;
     }
     .positiveList {
-        width: 75%;
+        width: 60%;
     }
     .negativeList {
-        width: 75%;
+        width: 60%;
     }
 
 
