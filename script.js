@@ -41,6 +41,8 @@ textArea.addEventListener('input', function () {
         document.body.style.backgroundColor = 'white';
     }
 
+    // adding word count number
+
     if(badCount > 0) {
         const p = document.getElementById('badCountText')
         p.innerHTML = `word count ${badCount}`;
