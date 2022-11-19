@@ -59,7 +59,8 @@ h3 {
 }
 
 .words-container .positiveList {
-  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
   padding: 10px 30px;
   border-radius: 10px;
   background-color: rgba(0, 255, 255, 0.377);
@@ -71,7 +72,8 @@ h3 {
 }
 
 .words-container .negativeList {
-  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
   padding: 10px 30px;
   border-radius: 10px;
   background-color: rgba(255, 0, 0, 0.438);
@@ -84,10 +86,11 @@ h3 {
 
 .words-container .middleText {
   font-size: 1rem;
-  padding: 10px 30px;
+  padding: 30px;
   width: 200px;
   text-align: center;
-  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
   border-radius: 10px;
 }
 
@@ -114,14 +117,34 @@ li {
 }
 
 .finalMessage {
-  position: absolute;
-  width: 90%;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 4rem;
+  font-size: 2rem;
+}
+
+.reloadLink {
+  padding: 5px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+}
+
+.finalContainer {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80%;
+  margin: auto;
 }
 
 @media all and (max-width: 1060px) {
@@ -172,7 +195,7 @@ li {
     display: none;
   }
   .words-container {
-    width: 70%;
+    width: 90%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
