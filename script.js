@@ -58,11 +58,24 @@ textArea.addEventListener('input', function () {
     }
     if (goodCount === 5 && badCount <=4){
         document.body.style.backgroundColor = `rgba(0, 255, 255, ${goodCount / 5})`
+
+
         const goodMessage = document.createElement("h5")
-        goodMessage.innerHTML = `Well done! <br> You wrote ${goodCount} positive words today`
-        document.getElementById("wellDoneContainer").append(goodMessage)
+        goodMessage.innerHTML = `Well Done! You wrote ${goodCount} Positive words today!`
+
+        const wellDoneContainer = document.getElementById("wellDoneContainer");
+        wellDoneContainer.append(goodMessage)
         goodMessage.classList.add('finalMessage');
         mainContainer.classList.add('hidden');
+        wellDoneContainer.classList.add('finalContainer')
+
+        const newbtn = document.createElement('button');
+        newbtn.innerHTML = 'click to reload page'
+        newbtn.classList.add('reloadLink');
+        wellDoneContainer.append(newbtn)
+        newbtn.addEventListener('click', () => {
+            window.location.reload();
+        })
     }
 
     // Bad Counts
@@ -81,11 +94,25 @@ textArea.addEventListener('input', function () {
     }
     if (badCount === 5 && goodCount <=4){
         document.body.style.backgroundColor = `rgba(255, 0, 0, ${badCount / 5})`
+
+
         const badMessage = document.createElement("h5")
         badMessage.innerHTML = `You wrote ${badCount} negative words today, I hope you feel better tomorrow`
-        document.getElementById("wellDoneContainer").append(badMessage)
+
+        const wellDoneContainer = document.getElementById("wellDoneContainer");
+        wellDoneContainer.append(badMessage)
         badMessage.classList.add('finalMessage');
         mainContainer.classList.add('hidden');
+        wellDoneContainer.classList.add('finalContainer')
+
+        const newbtn = document.createElement('button');
+        newbtn.innerHTML = 'click to reload page'
+        newbtn.classList.add('reloadLink');
+        wellDoneContainer.append(newbtn)
+        newbtn.addEventListener('click', () => {
+            window.location.reload();
+        })
+
     }
 
         // if goodcount and badcount are equal
