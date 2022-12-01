@@ -19,7 +19,7 @@ textArea.addEventListener('input', function () {
     }
 
     // Using regexp break value to array of words
-    const words = textArea.value.match(/\b(\w+)\b/g)
+    const words = textArea.value.toLowerCase().match(/\b(\w+)\b/g)
     let goodCount = 0;
     let badCount = 0;
 
@@ -33,15 +33,6 @@ textArea.addEventListener('input', function () {
              badCount++;
         }
     }
-
-    // if (goodCount > badCount) {
-    //     document.body.style.backgroundColor = goodColor;
-    // } else if (goodCount < badCount) {
-    //     document.body.style.backgroundColor = badColor;
-    // } else if(goodCount === badCount) {
-    //     document.body.style.backgroundColor = 'white';
-    // }
-
 
     // Good Counts
     if (goodCount === 1){
