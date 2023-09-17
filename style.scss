@@ -48,7 +48,6 @@ h1{
     justify-content: center;
     gap: 2rem;
     align-items: center;
-    flex-wrap: wrap;
     
     .positiveList, .negativeList{
         width: 200px;
@@ -151,13 +150,13 @@ h1{
         padding-top: 0;
     }
     .words-container {
-        margin: 1rem;
+        margin: 1rem
     }
     .medium-screen-how-to {
             display: block;
             width: min(400px, 90%);
             text-align: center;
-            font-size: 16px;       
+            font-size: 16px;    
      }
   }
 
@@ -167,13 +166,11 @@ h1{
         font-size: 1.5rem;
         text-align: center;
     }
-
-    .positiveList, .negativeList {
-        width: 150px !important;
-        font-size: 0.8rem;
-    }
-
     .textArea {
         width: calc(100% - 4rem);
+    }
+    .words-container{
+        gap: 1rem;
+        width: 90%;
     }
  } 
