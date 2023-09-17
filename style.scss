@@ -13,10 +13,7 @@ $box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('https://images.unsplash.com/photo-1601662528567-526cd06f6582?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1315&q=80');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .container {
@@ -116,12 +113,14 @@ h1{
 }
 
 .finalMessage {
+    max-width: 700px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 0 2rem;
 }
 
 .reloadLink {
-    padding: 0.5rem 1rem;
+    padding: 1rem 2rem;
     font-weight: 400;
     text-transform: uppercase;
     border-radius: 0.25rem;
@@ -144,10 +143,11 @@ h1{
         display: none;
     }
     .main-sub-title {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .diary-entry-text {
-        padding-top: 0;
+        padding: 0 0 1rem 0;
+ 
     }
     .words-container {
         margin: 1rem
@@ -156,18 +156,19 @@ h1{
             display: block;
             width: min(400px, 90%);
             text-align: center;
-            font-size: 16px;    
+            font-size: 16px;   
+            margin-bottom: 1rem; 
      }
   }
 
  @media  (max-width: 586px) {
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         text-align: center;
     }
     .textArea {
-        width: calc(100% - 4rem);
+        width: calc(100% - 3rem);
     }
     .words-container{
         gap: 1rem;
